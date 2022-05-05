@@ -16,7 +16,7 @@ section {
   min-height: 100vh;
   padding-top: 20px;
   margin-top: 400px;
-  background-color: white;
+  /* background-color: white; */
   
 }
 
@@ -54,7 +54,7 @@ font-weight: 400;
   padding: 10px 30px;
   font-size: 18px;
   text-decoration: none;
-  color: black;
+  color: white;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight:500;
@@ -72,10 +72,40 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
-  
-  
+  transition: 0.5s;
 }
+  
+header.sticky li {
+  background: #83A1CD;
+  transition: 0.5s;
+  
+
+}
+
+header.sticky a {
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  margin: 0px 25px;
+  background: -webkit-linear-gradient(#83A1CD, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+
+}
+
+header.sticky {
+   background:  #83A1CD;
+   padding: 20px 100px;
+   box-shadow: 5px, 5px, 20px #333;
+  }
+  
+  header.sticky .logo {
+    background: -webkit-linear-gradient(#83A1CD, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
 
 header .logo {
   color: black;
@@ -99,7 +129,8 @@ header li {
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 2px;
-
+  background: none;
+  background-color: none;
 }
 
 header a {
@@ -117,14 +148,27 @@ header a {
 .btns {
   display: flex;
   justify-content: end;
+  
 }
 
-.about {
+
+.about h2 {
   color: black;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+p {
+  line-height: 35px;
+}
+.contentBox h3 {
+ font-size: 26px;
+ margin-bottom: 15px;
+ font-weight: 600;
 }
 
 .contentBox {
- 
+  padding-right: 30px;
 }
 
 .heading {
@@ -135,7 +179,14 @@ header a {
 }
 
 .content {
-
+display: flex;  
+justify-content: space-between;
 }
 
+.w50 {
+  min-width: 50%;
+}
+img {
+  max-width: 100%;
+}
 
