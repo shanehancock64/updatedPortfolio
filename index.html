@@ -1,55 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./src/style.css">
-  <title>Portfolio</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <title>Portfolio</title>
+  </head>
 
-<body>
-  <div id="overview"></div>
-  <header>
-  <a href="#overview" class="logo">Portfolio</a>
-  <div class="toggle"></div>
-  <div class="btns">
-  <ul>
-    <li><a href="#overview">Home</a></li>
-    <li><a href="#aboutMe">About</a></li>
-    <li><a href="#">Projects</a></li>
-    <li><a href="#">Contact</a></li>
-  </ul>
-  </div>
-  </header>   
-  <section class ="banner">
-    <div class="bannerBox">
-    <h1>Hey, I'm<br><span>Shane Hancock</span></h1>
-    <h2>Full Stack Developer</h2>
-    <a href="#aboutMe" class="btn">About</a>
-  </div>
-  </section>
-  <section id="aboutMe" class ="about">
-    <div class="heading">
-      <h2>About Me</h2>
-    </div>
-    <div class="content">
-    <div class="contentBox w50">
-      <h3>I'm a Full Stack Developer <i id="icon" class="fa-brands fa-html5"></i>
-        <i id="icon" class="fa-brands fa-css3"></i>
-        <i id="icon" class="fa-brands fa-js"></i>
-        <i id="icon" class="fa-brands fa-node"></i>
-        <i id="icon" class="fa-brands fa-react"></i></h3>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, obcaecati quis aut repellendus unde similique rem laudantium quam, saepe eveniet ipsa error sint est quae velit animi commodi quisquam quia!<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ullam dicta, aspernatur ipsam impedit, eum vel quos placeat beatae suscipit nesciunt aliquam repellendus blanditiis, tempora ea sed quae! Architecto, explicabo?</p>
-    </div>
-    <div class="w50">
-      <img src="https://elements-cover-images-0.imgix.net/37a16df5-688a-4d87-be17-77674edea0cd?auto=compress%2Cformat&fit=max&w=900&s=b2957e7085ad73fd1b385fe30556247d" alt="Full Stack cartoon" />
-    </div>
-    </div>
-  </section>
+  <body>
+    <div id="overview"></div>
+    <header>
+      <a href="#overview" class="logo">Portfolio</a>
+      <div class="toggle"></div>
+      <div class="btns">
+        <ul>
+          <li><a href="#overview">Home</a></li>
+          <li><a href="#aboutMe">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+    <section class="banner">
      
+      <div class="bannerBox">
+        <h1>Hey, I'm<br /><span>Shane Hancock</span></h1> 
+        <h2>Full Stack Developer</h2>
+        <a href="#aboutMe" class="btn">About</a>
+         </div>
+    </section>
+    <section id="aboutMe" class="about">
+      <div class="heading">
+        <h2>About Me</h2>
+      </div>
+      <div class="content">
+        <div class="contentBox w50">
+          <h3>
+            I'm a Full Stack Developer
+            <i id="icon" class="fa-brands fa-html5"></i>
+            <i id="icon" class="fa-brands fa-css3"></i>
+            <i id="icon" class="fa-brands fa-js"></i>
+            <i id="icon" class="fa-brands fa-node"></i>
+            <i id="icon" class="fa-brands fa-react"></i>
+          </h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum,
+            obcaecati quis aut repellendus unde similique rem laudantium quam,
+            saepe eveniet ipsa error sint est quae velit animi commodi quisquam
+            quia!<br />Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Nam ullam dicta, aspernatur ipsam impedit, eum vel quos placeat
+            beatae suscipit nesciunt aliquam repellendus blanditiis, tempora ea
+            sed quae! Architecto, explicabo?
+          </p>
+        </div>
+        <div class="w50">
+          <img
+            src="https://elements-cover-images-0.imgix.net/37a16df5-688a-4d87-be17-77674edea0cd?auto=compress%2Cformat&fit=max&w=900&s=b2957e7085ad73fd1b385fe30556247d"
+            alt="Full Stack cartoon"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="projectSection w50">
+      <div class="heading">
+        <h2>Recent Projects</h2>
+      </div>
+      <div class="projectContainer">
+        <div class="projectCard"><img src="./src/images/Screen Shot 2022-05-05 at 3.17.50 PM.png" alt="Stream Seeker">
+          <h3>Stream Seeker</h3>
+          <p class="subTxt">Created a platform to search movies and find where they are available to stream.</p>
+          <a href="https://shanehancock64.github.io/Streaming-Project/" target="_blank" class="btn">View More</a>
+          
+        </div>
+        <div class="projectCard"><img src="./src/images/Screen Shot 2022-05-05 at 3.21.17 PM.png" alt="Readme Generator">
+          <h3>README Generator</h3>
+          <p class="subTxt">Created a Markdown fille generator using JS, NODE, and NPM Inquirer.</p>
+          <a href="" target="_blank" class="btn">View More</a>
+          
+        </div>
+        <div class="projectCard"><img src="./src/images/Screen Shot 2022-05-05 at 3.22.47 PM.png" alt="Weather Dashboard">
+          <h3>Weather Dashboard</h3>
+          <p class="subTxt">Created a simple weather dashboard with a 7 day forecast.</p>
+          <a href="" target="_blank" class="btn">View More</a>
+          
+        </div>
+      </div>
+    </section>
 
-<script src="./src/script.js"></script>
-<script src="https://kit.fontawesome.com/e5d1bb30b3.js" crossorigin="anonymous"></script>
-</body>
+    <script src="./src/script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/e5d1bb30b3.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

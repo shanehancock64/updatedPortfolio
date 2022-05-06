@@ -1,40 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #fff;
-  font-family: 'Poppins', sans-serif;
+  /* background-color: #fff; */
+  font-family: "Poppins", sans-serif;
 }
 
 section {
   padding: 100px;
 }
 
+
 .banner {
+  background-image: url(./images/sketch.portfolio\ \(1\).jpeg);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  max-width: 100vw;
   min-height: 100vh;
-  padding-top: 20px;
-  margin-top: 400px;
-  /* background-color: white; */
-  
+  margin-top: 150px;
+  margin-bottom: 300px;
+ 
 }
 
 .banner h1 {
-font-size:4em;
-color: black;
-font-weight: 400;
-
-
+  font-size: 4em;
+  color: black;
+  font-weight: 400;
 }
 
 .banner h1 span {
   font-weight: 800;
   font-size: 90px;
-  background: -webkit-linear-gradient(#83A1CD, black);
+  background: -webkit-linear-gradient(#83a1cd, black);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent
-  
+  -webkit-text-fill-color: transparent;
 }
 
 .banner h2 {
@@ -47,8 +49,8 @@ font-weight: 400;
 
 .btn {
   /* position: relative; */
-  background-color: #83A1CD;
-  background: linear-gradient(#83A1CD, black);
+  background-color: #83a1cd;
+  background: linear-gradient(#83a1cd, black);
   display: inline-block;
   margin: 20px;
   padding: 10px 30px;
@@ -57,10 +59,9 @@ font-weight: 400;
   color: white;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-weight:500;
+  font-weight: 500;
   border-radius: 50px;
-
-} 
+}
 
 header {
   position: fixed;
@@ -73,13 +74,12 @@ header {
   justify-content: space-between;
   align-items: center;
   transition: 0.5s;
+  /* box-shadow: 0.2px 0.2px 20px #83a1cd; */
 }
-  
-header.sticky li {
-  background: #83A1CD;
-  transition: 0.5s;
-  
 
+header.sticky li {
+  background: transparent;
+  transition: 0.5s;
 }
 
 header.sticky a {
@@ -87,25 +87,22 @@ header.sticky a {
   position: relative;
   display: inline-block;
   margin: 0px 25px;
-  background: -webkit-linear-gradient(#83A1CD, #fff);
+  background: -webkit-linear-gradient(#83a1cd, #fff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  
-
 }
 
 header.sticky {
-   background:  #83A1CD;
-   padding: 20px 100px;
-   box-shadow: 5px, 5px, 20px #333;
-  }
-  
-  header.sticky .logo {
-    background: -webkit-linear-gradient(#83A1CD, #fff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  
+  background: #83a1cd;
+  padding: 20px 100px;
+  box-shadow: 5px 5px 28px #83a1cd;
+}
+
+header.sticky .logo {
+  background: -webkit-linear-gradient(#83a1cd, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 header .logo {
   color: black;
@@ -114,7 +111,6 @@ header .logo {
   letter-spacing: 2px;
   text-transform: uppercase;
   text-decoration: none;
-  
   
 }
 
@@ -138,19 +134,15 @@ header a {
   position: relative;
   display: inline-block;
   margin: 0px 25px;
-  background: -webkit-linear-gradient(#83A1CD, black);
+  background: -webkit-linear-gradient(#83a1cd, black);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  
-
 }
 
 .btns {
   display: flex;
   justify-content: end;
-  
 }
-
 
 .about h2 {
   color: black;
@@ -162,9 +154,9 @@ p {
   line-height: 35px;
 }
 .contentBox h3 {
- font-size: 26px;
- margin-bottom: 15px;
- font-weight: 600;
+  font-size: 26px;
+  margin-bottom: 15px;
+  font-weight: 600;
 }
 
 .contentBox {
@@ -176,11 +168,14 @@ p {
   text-align: center;
   margin-bottom: 30px;
   color: black;
+  font-weight: 700;
+  font-size: 26px;
+  margin-bottom: 150px;
 }
 
 .content {
-display: flex;  
-justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .w50 {
@@ -190,3 +185,41 @@ img {
   max-width: 100%;
 }
 
+.projectContainer {
+  display: flex;
+  justify-content: space-around;
+}
+.projectCard {
+  width: 300px;
+  height: 500px;
+  box-shadow: 2px 2px 15px #83a1cd;
+  border-radius: 40px;
+  background: -webkit-linear-gradient(#83a1cd, #fff);
+  
+}
+
+.projectCard img {
+  margin: 25px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-radius: 10px;
+  
+ 
+}
+
+.projectCard h3 { 
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  margin: auto;
+  max-width: 85%;
+}
+
+.subTxt {
+  text-align: center;
+  margin: 10px;
+  font-weight: 300;
+
+}
