@@ -217,6 +217,28 @@ img {
   max-width: 85%;
 }
 
+.centerBtn {
+  width: 100%;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.cardBtn {
+  background-color: #83a1cd;
+  background: linear-gradient(#83a1cd, black);
+  padding: 10px 30px;
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  border-radius: 50px;
+  
+}
+
+
+
 .subTxt {
   text-align: center;
   margin: 10px;
