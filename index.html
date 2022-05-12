@@ -14,7 +14,7 @@
       <a href="#overview" class="logo">Portfolio</a>
       <div class="toggle"></div>
       <div class="btns">
-        <ul>
+        <ul class="menu">
           <li><a href="#overview">Home</a></li>
           <li><a href="#aboutMe">About</a></li>
           <li><a href="#projects">Projects</a></li>
@@ -23,12 +23,11 @@
       </div>
     </header>
     <section class="banner">
-     
       <div class="bannerBox">
-        <h1>Hey, I'm<br /><span>Shane Hancock</span></h1> 
+        <h1>Hey, I'm<br /><span>Shane Hancock</span></h1>
         <h2>Full Stack Developer</h2>
         <a href="#aboutMe" class="btn">About</a>
-         </div>
+      </div>
     </section>
     <section id="aboutMe" class="about">
       <div class="heading">
@@ -67,85 +66,117 @@
         <h2>Recent Projects</h2>
       </div>
       <div class="projectContainer">
-        <div class="projectCard"><img src="./src/images/Screen Shot 2022-05-05 at 3.17.50 PM.png" alt="Stream Seeker">
+        <div class="projectCard">
+          <img
+            src="./src/images/Screen Shot 2022-05-05 at 3.17.50 PM.png"
+            alt="Stream Seeker"
+          />
           <h3>Stream Seeker</h3>
-          <p class="subTxt">Created a platform to search movies and find where they are available to stream.</p>
+          <p class="subTxt">
+            Created a platform to search movies and find where they are
+            available to stream.
+          </p>
           <div class="centerBtn">
-            <a href="https://shanehancock64.github.io/Streaming-Project/" target="_blank" class="cardBtn">View More</a>
+            <a
+              href="https://shanehancock64.github.io/Streaming-Project/"
+              target="_blank"
+              class="cardBtn"
+              >View More</a
+            >
           </div>
-          
         </div>
-        <div class="projectCard"><img src="./src/images/Screen Shot 2022-05-05 at 3.21.17 PM.png" alt="Readme Generator">
+        <div class="projectCard">
+          <img
+            src="./src/images/Screen Shot 2022-05-05 at 3.21.17 PM.png"
+            alt="Readme Generator"
+          />
           <h3>README Generator</h3>
-          <p class="subTxt">Created a Markdown fille generator using JS, NODE, and NPM Inquirer.</p>
+          <p class="subTxt">
+            Created a Markdown fille generator using JS, NODE, and NPM Inquirer.
+          </p>
           <div class="centerBtn">
-            <a href="https://github.com/shanehancock64/readmeGenerator" target="_blank" class="cardBtn">View More</a>
-           </div>
-          
-        </div>
-        <div class="projectCard"><img src="./src/images/Screen Shot 2022-05-05 at 3.22.47 PM.png" alt="Weather Dashboard">
-          <h3>Weather Dashboard</h3>
-          <p class="subTxt">Created a simple weather dashboard with a 7 day forecast.      </p>    <br>
-          <div class="centerBtn">
-            <a href="https://shanehancock64.github.io/WeatherDashboardHomework06/" target="_blank" class="cardBtn">View More</a>
+            <a
+              href="https://github.com/shanehancock64/readmeGenerator"
+              target="_blank"
+              class="cardBtn"
+              >View More</a
+            >
           </div>
-          
+        </div>
+        <div class="projectCard">
+          <img
+            src="./src/images/Screen Shot 2022-05-05 at 3.22.47 PM.png"
+            alt="Weather Dashboard"
+          />
+          <h3>Weather Dashboard</h3>
+          <p class="subTxt">
+            Created a simple weather dashboard with a 7 day forecast.
+          </p>
+          <br />
+          <div class="centerBtn">
+            <a
+              href="https://shanehancock64.github.io/WeatherDashboardHomework06/"
+              target="_blank"
+              class="cardBtn"
+              >View More</a
+            >
+          </div>
         </div>
       </div>
     </section>
     <section id="contact" class="contact">
       <div class="heading">
         <h2>Contact Me</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        <p></p>
       </div>
       <div class="content">
         <div class="contactInfo">
-          <h3>Contact Info</h3>
           <div class="contactInfoBox">
-            <div class="icon">
-              <i class="fa-solid fa-location-dot"></i>
+            <div class="box">
+              <div class="icon">
+                <i class="fa-solid fa-location-dot" style="color: #83a1cd"></i>
+              </div>
+              <div class="text">
+                <h3>Address</h3>
+                <p>PO BOX 2754 <br />Snowflake, Arizona <br />85937</p>
+              </div>
             </div>
-            <div class="text">
-              <h3>Address</h3>
-              <p>PO BOX 2754 <br>Snowflake, Arizona <br>85937</p>
+            <div class="box">
+              <div class="icon">
+                <i
+                  class="fa-solid fa-mobile-screen-button"
+                  style="color: #83a1cd"
+                ></i>
+              </div>
+              <div class="text">
+                <h3>Phone</h3>
+                <p>(928) 243-4522</p>
+              </div>
             </div>
-
-          </div>
-          <div class="contactInfoBox">
-            <div class="icon">
-              <i class="fa-solid fa-mobile-screen-button"></i>
+            <div class="box">
+              <div class="icon">
+                <i class="fa-solid fa-envelope" style="color: #83a1cd"></i>
+              </div>
+              <div class="text">
+                <h3>Email</h3>
+                <p>shanehancock64@live.com</p>
+              </div>
             </div>
-            <div class="text">
-              <h3>Phone</h3>
-              <p>(928) 243-4522</p>
-            </div>
-
-          </div>
-          <div class="contactInfoBox">
-            <div class="icon">
-              <i class="fa-solid fa-envelope"></i>
-            </div>
-            <div class="text">
-              <h3>Email</h3>
-              <p>shanehancock64@live.com</p>
-            </div>
-
           </div>
         </div>
-      </div>
+      
+
       <div class="formBox">
         <form>
           <h3>Message Me</h3>
-          <input type="text" name="" placeholder="Full Name">
-          <input type="email" name="" placeholder="Email Address">
-          <textarea placeholder="Your Message" ></textarea>
-          <input type="submit" value="send">
+          <input type="text" name="" placeholder="Full Name" />
+          <input type="email" name="" placeholder="Email Address" />
+          <textarea placeholder="Your Message"></textarea>
+          <input type="submit" value="send" />
         </form>
-
       </div>
-
+    </div>
     </section>
-
 
     <script src="./src/script.js"></script>
     <script

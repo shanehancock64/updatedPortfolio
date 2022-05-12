@@ -6,6 +6,7 @@
   box-sizing: border-box;
   /* background-color: #fff; */
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 
 section {
@@ -93,6 +94,7 @@ header.sticky a {
 }
 
 header.sticky {
+  
   background: #83a1cd;
   padding: 20px 100px;
   box-shadow: 5px 5px 28px #83a1cd;
@@ -245,3 +247,96 @@ img {
   font-weight: 300;
 
 }
+
+
+
+.contact h2 {
+font-size: 32px;
+font-weight: 700;
+}
+
+.contactInfoBox {
+  position: relative;
+  
+  
+  
+}
+
+.contactInfoBox .box {
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+}
+
+.contactInfoBox .box .icon {
+  min-width: 40px;
+  padding-top: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+.contactInfoBox .box .text {
+  display: flex;
+  margin-left: 20px;
+  font-size: 16px;
+  flex-direction: column;
+  font-weight: 300;
+}
+
+.contactInfoBox .box .text h3 {
+  font-weight: 500;
+  color: #83a1cd;
+  margin-bottom: 0;
+}
+
+.formBox {
+  min-width: 60%;
+  margin-top: 40px;
+
+}
+
+
+.formBox form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formBox form h3 {
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: center;
+  
+}
+
+.formBox form input, .formBox form textarea {
+  margin-bottom: 20px;
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid #83a1cd;
+  background: transparent;
+  resize: none;
+}
+
+.formBox form textarea {
+  min-height: 200px;
+
+}
+
+.formBox form input::placeholder, .formBox form textarea::placeholder {
+  color: #83a1cd;
+}
+
+.formBox form input[type="submit"] {
+  max-width: 100px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-color: #83a1cd;
+  background: linear-gradient(#83a1cd, black);
+  color: #fff;
+}
+
