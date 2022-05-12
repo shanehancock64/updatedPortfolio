@@ -6,7 +6,7 @@
   box-sizing: border-box;
   /* background-color: #fff; */
   font-family: "Poppins", sans-serif;
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
 }
 
 section {
@@ -256,14 +256,14 @@ font-weight: 700;
 }
 
 .contactInfoBox {
-  position: relative;
+  /* position: relative; */
   
   
   
 }
 
 .contactInfoBox .box {
-  position: relative;
+  /* position: relative; */
   padding: 20px 0;
   display: flex;
 }
@@ -340,3 +340,10 @@ font-weight: 700;
   color: #fff;
 }
 
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  
+
+}
